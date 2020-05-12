@@ -1,7 +1,7 @@
 import * as Request from "request-promise-native";
 
 class CTRAPIWrapper {
-  private BASE_URL: string = "https://ctr-api.herokuapp.com";
+  private BASE_URL: string = "https://ctr-api.herokuapp.com/api/v1/";
   private OPTIONS: Request.RequestPromiseOptions = {
     json: true,
   };
