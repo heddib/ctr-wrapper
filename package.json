@@ -1,0 +1,31 @@
+{
+  "name": "ctrapi-wrapper",
+  "version": "1.0.0",
+  "description": "A wrapper library to interact with the CTR API.",
+  "main": "dist/main.js",
+  "repository": "https://github.com/heddib/ctr-wrapper.git",
+  "author": "Heddi Brahiti",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "clean": "./node_modules/.bin/gulp clean",
+    "transpile": "./node_modules/.bin/tsc",
+    "lint:tslint": "./node_modules/.bin/tslint -c tslint.yaml 'source/**/*.ts'",
+    "lint": "yarn lint:tslint",
+    "build": "yarn clean && yarn transpile",
+    "test": "yarn lint"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.4",
+    "@types/request": "^2.48.3",
+    "@types/request-promise-native": "^1.0.17",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.2"
+  },
+  "peerDependencies": {
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5"
+  }
+}
