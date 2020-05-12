@@ -1,5 +1,5 @@
 {
-  "name": "ctrapi-wrapper",
+  "name": "ctr-wrapper",
   "version": "1.0.0",
   "description": "A wrapper library to interact with the CTR API.",
   "main": "dist/main.js",
